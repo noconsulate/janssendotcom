@@ -4,11 +4,12 @@
       <h1>Janssen Kuhn Personal Website</h1>
     </header>
     <nav>
-      <a>Biography</a>
-      <a>Portfolio</a>
-      <a>Repository</a>
-      <a>Contact</a>
+      <a routerLink="/biography" routerLinkActive="active">Biography</a>
+      <a routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
+      <a routerLink="/repository" routerLinkActive="active">Repository</a>
+      <a routerLink="/contact" routerLinkActive="active">Contact</a>
     </nav>
   </div>
+  <router-outlet></router-outlet>
+
 </div>
-<app-biography></app-biography>

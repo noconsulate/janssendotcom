@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+$yellow: #fce473;
+$green: #32cd32;
+$black: #181d18;
+$primary-color: $black;
+
+.container {
+  margin: auto;
+  width: 960px;
+}
+
+.over-fold {
+  padding-bottom: 3rem;
+  background-color: yellow;
+}
+
+header {
+  h1 {
+    margin: 0;
+    color: $green;
+
+    &:hover {
+      color: $yellow;
+    }
+  }
+}
+
+nav {
+  a~a {
+    padding-left: 1rem;
+  }
+}
