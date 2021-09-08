@@ -20,6 +20,14 @@ body {
 
 html {
   font-size: 17px;
+
+  h1,
+  h2,
+  h3,
+  p {
+    margin: 0px;
+  }
+
 }
 
 a {
@@ -56,14 +64,9 @@ a {
     background-color: $niceOrange;
     padding: 1em;
 
-    h1 {
-      padding-bottom: 0px;
-      margin: 0px;
-      font-size: 2.5rem;
-    }
+    h1 {}
 
-    h2 {
-      margin: 0px;
+    h3 {
       margin-bottom: .5rem;
       margin-left: .5rem;
     }
@@ -81,5 +84,5 @@ nav {
 }
 
 .router {
-  padding: 1rem;
+  margin: 1rem;
 }
