@@ -1,0 +1,19 @@
+@import '../../styles/styles';
+
+a {
+  all: revert;
+}
+
+@include breakpoint(mobile, max) {
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    margin-bottom: .2rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+}
