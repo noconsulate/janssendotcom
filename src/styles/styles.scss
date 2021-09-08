@@ -60,6 +60,9 @@ a {
 
 
 header {
+  position: sticky;
+  top: 0;
+
   @include breakpoint(mobile, max) {
     background-color: $niceOrange;
     padding: 1em;
