@@ -1,7 +1,13 @@
+@import './media-queries';
+
 $yellow: #fce473;
 $green: #32cd32;
 $black: #181d18;
 $primary-color: $black;
+
+* {
+  box-sizing: border-box;
+}
 
 .container {
   margin: auto;
@@ -27,5 +33,11 @@ header {
 nav {
   a~a {
     padding-left: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: green
   }
 }
