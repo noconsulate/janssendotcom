@@ -59,7 +59,7 @@ a {
 }
 
 
-.over-fold {
+header {
   @include breakpoint(mobile, max) {
     background-color: $niceOrange;
     padding: 1em;
