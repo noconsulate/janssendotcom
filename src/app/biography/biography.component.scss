@@ -1,1 +1,5 @@
-@import '../../styles/styles'
+@import '../../styles/styles';
+
+:host {
+  color: green;
+}

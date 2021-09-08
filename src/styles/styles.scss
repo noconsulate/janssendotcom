@@ -3,41 +3,77 @@
 $yellow: #fce473;
 $green: #32cd32;
 $black: #181d18;
+$niceOrange: rgba(236, 183, 18, 1);
+$grey: rgba(88, 84, 70, 1);
+$red: rgba(156, 24, 24, 1);
+
 $primary-color: $black;
+$link-color: $grey;
 
 * {
   box-sizing: border-box;
 }
 
-.container {
-  margin: auto;
-  width: 960px;
+body {
+  margin: 0px;
 }
 
-.over-fold {
-  padding-bottom: 3rem;
-  background-color: yellow;
+html {
+  font-size: 16px;
 }
 
-header {
-  h1 {
-    margin: 0;
-    color: $green;
+a {
+  text-decoration: none;
+  outline: none;
 
-    &:hover {
-      color: $yellow;
-    }
+  &:link {
+    color: $link-color;
+  }
+
+  &:visited {
+    color: $link-color;
+  }
+
+  &:hover {
+    color: black;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $red;
   }
 }
+
+.container {
+  @include breakpoint(mobile, max) {
+    width: screen;
+  }
+}
+
+
+.over-fold {
+  @include breakpoint(mobile, max) {
+    background-color: $niceOrange;
+    padding: 1em;
+
+    h1 {
+      padding-bottom: 0px;
+      margin: 0px;
+    }
+
+    h2 {
+      margin: 0px;
+      margin-left: 1rem;
+    }
+
+  }
+
+  padding-bottom: 3rem;
+}
+
 
 nav {
   a~a {
     padding-left: 1rem;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: green
   }
 }
