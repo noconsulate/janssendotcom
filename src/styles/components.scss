@@ -3,6 +3,10 @@
     text-align: justify;
   }
 
+  a {
+    all: revert;
+  }
+
   @include breakpoint(mobile, max) {
     h2 {
       margin-bottom: 1rem;
