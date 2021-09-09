@@ -12,18 +12,27 @@
   }
 
   h1 {
-    font-family: 'JetBrains Mono', 'Alegreya', serif;
     font-size: 1.2rem;
     margin-left: 0rem;
     margin-bottom: .2rem;
   }
 
-  .item {
-    margin: .5rem;
+  .details {
+    margin: .3rem;
     margin-top: 0rem;
 
     p {
       font-style: italic;
+      margin-top: .5rem;
+    }
+  }
+
+  .item {
+    h1 {
+      font-family: 'JetBrains Mono',
+        'Alegreya',
+        serif;
+
     }
   }
 
