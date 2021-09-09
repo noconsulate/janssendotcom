@@ -1,4 +1,5 @@
 @import './media-queries';
+@import './components.scss';
 
 $yellow: #fce473;
 $green: #32cd32;
@@ -69,12 +70,26 @@ header {
   top: 0;
 
   background-color: $niceOrange;
-  padding: 1em;
 
-  h3 {
-    margin-bottom: .5rem;
-    margin-left: .5rem;
+  @include breakpoint(mobile, max) {
+    padding: 1em;
+
+    h3 {
+      margin-bottom: .5rem;
+      margin-left: .5rem;
+    }
   }
+
+  @include breakpoint(laptop, min) {
+    padding: 1em;
+
+    h3 {
+      margin-top: .4rem;
+      margin-bottom: .6rem;
+      margin-left: 0rem;
+    }
+  }
+
 }
 
 
@@ -85,5 +100,11 @@ nav {
 }
 
 .router {
-  margin: 1rem;
+  @include breakpoint(mobile, max) {
+    margin: 1rem;
+  }
+
+  @include breakpoint(laptop, min) {
+    margin-top: 1rem;
+  }
 }
