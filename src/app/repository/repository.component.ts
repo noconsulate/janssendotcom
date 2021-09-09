@@ -9,6 +9,12 @@ export class RepositoryComponent implements OnInit {
 
   constructor() { }
 
+  repoLink: string = "https://github.com/noconsulate"
+
+  openRepo(): void {
+    window.open(this.repoLink, "_blank")
+  }
+
   ngOnInit(): void {
   }
 

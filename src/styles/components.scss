@@ -3,7 +3,8 @@
     text-align: justify;
   }
 
-  a {
+  a,
+  .reverted-link {
     all: revert;
   }
 
