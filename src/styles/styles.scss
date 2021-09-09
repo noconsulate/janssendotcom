@@ -1,6 +1,9 @@
 @import './media-queries';
 @import './components.scss';
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@600&display=swap');
+
+
 $yellow: #fce473;
 $green: #32cd32;
 $black: #181d18;
@@ -20,7 +23,9 @@ body {
 }
 
 html {
-  font-size: 17px;
+  font-family: 'Cormorant',
+    serif;
+  font-size: 20px;
 
   h1,
   h2,
