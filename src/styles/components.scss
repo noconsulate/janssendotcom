@@ -6,9 +6,18 @@
   a,
   .reverted-link {
     all: revert;
+    margin-top: 0px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
   }
 
   @include breakpoint(mobile, max) {
+    h1 {
+      margin-bottom: 0px;
+    }
+
     h2 {
       margin-bottom: 1rem;
     }
@@ -19,6 +28,11 @@
 
     p {
       margin-bottom: 1rem;
+    }
+
+    a,
+    .reverted-link {
+      margin-left: .5rem;
     }
   }
 
