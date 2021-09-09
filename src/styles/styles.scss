@@ -76,12 +76,14 @@ a {
 
 
 header {
-  position: sticky;
-  top: 0;
+
 
   background-color: $niceOrange;
 
   @include breakpoint(mobile, max) {
+    position: sticky;
+    top: 0;
+
     .title {
       padding: 1em;
       padding-bottom: 0rem;
@@ -92,15 +94,27 @@ header {
       margin-bottom: .5rem;
       margin-left: .5rem;
     }
+
+    nav {
+      padding-left: .4rem;
+    }
   }
 
-  @include breakpoint(laptop, min) {
-    padding: 1em;
+  @include breakpoint(mobile, min) {
+    .title {
+      padding-left: 1em;
+      padding-bottom: 0rem;
+    }
 
     h3 {
-      margin-top: .4rem;
+      margin-top: -.4rem;
       margin-bottom: .6rem;
-      margin-left: 0rem;
+      margin-left: .5rem;
+    }
+
+    nav {
+      padding-left: 1rem;
+      padding-bottom: .5rem;
     }
   }
 
@@ -108,8 +122,6 @@ header {
 
 
 nav {
-  padding-left: .4rem;
-
   a~a {
     padding-left: .8rem;
   }
@@ -120,7 +132,7 @@ nav {
     margin: 1rem;
   }
 
-  @include breakpoint(laptop, min) {
+  @include breakpoint(mobile, min) {
     margin-top: 1rem;
   }
 }
