@@ -41,7 +41,29 @@ html {
 
 }
 
-a {
+// a {
+//   text-decoration: none;
+//   outline: none;
+
+//   &:link {
+//     color: $link-color;
+//   }
+
+//   &:visited {
+//     color: $link-color;
+//   }
+
+//   &:hover {
+//     color: black;
+//     text-decoration: underline;
+//   }
+
+//   &:active {
+//     color: $red;
+//   }
+// }
+
+.inactive_nav {
   text-decoration: none;
   outline: none;
 
@@ -119,6 +141,7 @@ header {
   }
 
 }
+
 
 
 nav {
