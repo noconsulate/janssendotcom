@@ -13,6 +13,7 @@ $red: rgba(156, 24, 24, 1);
 
 $primary-color: $black;
 $link-color: $grey;
+$active-link-color: $red;
 
 * {
   box-sizing: border-box;
@@ -77,7 +78,27 @@ html {
 
   &:hover {
     color: black;
-    text-decoration: underline;
+  }
+
+  &:active {
+    color: $red;
+  }
+}
+
+.active_nav {
+  text-decoration: none;
+  outline: none;
+
+  &:link {
+    color: $active-link-color
+  }
+
+  &:visited {
+    color: $active-link-color;
+  }
+
+  &:hover {
+    // color: black;
   }
 
   &:active {
