@@ -1,19 +1,9 @@
+@import './variables.scss';
 @import './media-queries';
 @import './components.scss';
 
 @import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Cormorant:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&display=swap');
-
-$yellow: #fce473;
-$green: #32cd32;
-$black: #181d18;
-$niceOrange: rgba(236, 183, 18, 1);
-$grey: rgba(88, 84, 70, 1);
-$red: rgba(156, 24, 24, 1);
-
-$primary-color: $black;
-$link-color: $grey;
-$active-link-color: $red;
 
 * {
   box-sizing: border-box;
@@ -41,28 +31,6 @@ html {
   }
 
 }
-
-// a {
-//   text-decoration: none;
-//   outline: none;
-
-//   &:link {
-//     color: $link-color;
-//   }
-
-//   &:visited {
-//     color: $link-color;
-//   }
-
-//   &:hover {
-//     color: black;
-//     text-decoration: underline;
-//   }
-
-//   &:active {
-//     color: $red;
-//   }
-// }
 
 .inactive_nav {
   text-decoration: none;
@@ -177,6 +145,6 @@ nav {
   }
 
   @include breakpoint(mobile, min) {
-    margin-top: 1rem;
+    margin: 1rem;
   }
 }

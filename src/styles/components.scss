@@ -1,3 +1,5 @@
+// @import './styles.scss';
+
 .components {
   h2 {
     margin-top: -.8rem;
@@ -13,6 +15,7 @@
     display: block;
     margin-top: 0px;
     margin-bottom: .2rem;
+    font-size: .8rem;
   }
 
   article {
@@ -25,7 +28,7 @@
       margin-bottom: .5rem;
     }
 
-    @include breakpoint(laptop, min) {
+    @include breakpoint(mobile, min) {
       padding-left: 1rem;
       width: 50%;
     }
@@ -33,17 +36,33 @@
   }
 
   .item {
-    padding: .5rem;
-    padding-top: 0rem;
+
 
     h3 {
       font-size: 1.4rem;
+      color: $red;
     }
 
+    // box-shadow: 1px 2px 5px;
+    box-shadow: 2px 3px 5px -1px;
+    border-radius: 5x;
+
+    @include breakpoint(mobile, max) {
+      padding: .5rem;
+      margin-bottom: 1rem;
+    }
+
+    @include breakpoint(mobile, min) {
+      padding: .5rem;
+      padding-top: .5rem;
+      padding-bottom: 1rem;
+      margin-left: .1rem;
+      margin-bottom: 1.5rem;
+      width: 50%;
+    }
   }
 
   .details {
-    // margin: .3rem;
     margin-top: .3rem;
 
     p {
@@ -51,87 +70,7 @@
       margin-top: .5rem;
     }
 
-    @include breakpoint(phone, min) {
-      width: 30%;
-    }
+
+
   }
 }
-
-// .components {
-//   p {
-//     text-align: justify;
-//   }
-
-//   a,
-//   .reverted-link {
-//     all: revert;
-//     display: block;
-//     margin-top: 0px;
-//     margin-bottom: .2rem;
-//   }
-
-//   h2 {
-//     font-size: 1.2rem;
-//     margin-left: 0rem;
-//     margin-bottom: .2rem;
-//   }
-
-//   .details {
-//     margin: .3rem;
-//     margin-top: 0rem;
-
-//     p {
-//       font-style: italic;
-//       margin-top: .5rem;
-//     }
-//   }
-
-//   .item {
-//     h1 {
-//       // font-family: 'JetBrains Mono',
-//       //   'Alegreya',
-//       //   serif;
-
-//     }
-//   }
-
-//   @include breakpoint(mobile, max) {
-//     h1 {
-//       // margin-bottom: 0px;
-//     }
-
-//     h2 {
-//       margin-bottom: 1rem;
-//     }
-
-//     h3 {
-//       margin-bottom: .5rem;
-//     }
-
-//     p {
-//       margin-bottom: 1rem;
-//     }
-
-//     a,
-//     .reverted-link {
-//       // margin-left: .5rem;
-//     }
-//   }
-
-//   @include breakpoint(laptop, min) {
-//     h2 {
-//       margin-bottom: 1rem;
-//     }
-
-//     h3 {
-//       margin-top: .8rem;
-//       margin-bottom: .3rem;
-//     }
-
-//     p {
-//       margin-bottom: .5rem;
-//       margin-left: .3rem;
-//     }
-//   }
-
-// }
