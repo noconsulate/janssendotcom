@@ -6,6 +6,7 @@ import { RepositoryComponent } from './repository/repository.component'
 import { ContactComponent } from './contact/contact.component'
 
 const routes: Routes = [
+  { path: '', redirectTo: 'biography', pathMatch: 'full' },
   { path: 'biography', component: BiographyComponent },
   { path: 'portfolio', component: PortfolioComponent },
   { path: 'repository', component: RepositoryComponent },
