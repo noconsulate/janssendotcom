@@ -1,9 +1,9 @@
-@import './variables.scss';
-@import './media-queries';
-@import './components.scss';
+@import "./variables.scss";
+@import "./media-queries";
+@import "./components.scss";
 
-@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Cormorant:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Cormorant:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&display=swap");
 
 * {
   box-sizing: border-box;
@@ -14,14 +14,13 @@ body {
 }
 
 html {
-  font-family: 'Alegreya',
-    serif;
+  font-family: "Alegreya", serif;
   font-size: 20px;
 
   h1,
   h2,
   h3 {
-    font-family: 'Cormorant', serif;
+    font-family: "Cormorant", serif;
     margin: 0px;
   }
 
@@ -30,6 +29,7 @@ html {
     font-size: 17px;
   }
 
+  width: 100vw;
 }
 
 .inactive_nav {
@@ -58,7 +58,7 @@ html {
   outline: none;
 
   &:link {
-    color: $active-link-color
+    color: $active-link-color;
   }
 
   &:visited {
@@ -85,10 +85,7 @@ html {
   }
 }
 
-
 header {
-
-
   background-color: $niceOrange;
 
   @include breakpoint(mobile, max) {
@@ -101,13 +98,13 @@ header {
     }
 
     h3 {
-      margin-top: -.5rem;
-      margin-bottom: .5rem;
-      margin-left: .5rem;
+      margin-top: -0.5rem;
+      margin-bottom: 0.5rem;
+      margin-left: 0.5rem;
     }
 
     nav {
-      padding-left: .4rem;
+      padding-left: 0.4rem;
     }
   }
 
@@ -118,24 +115,21 @@ header {
     }
 
     h3 {
-      margin-top: -.4rem;
-      margin-bottom: .6rem;
-      margin-left: .5rem;
+      margin-top: -0.4rem;
+      margin-bottom: 0.6rem;
+      margin-left: 0.5rem;
     }
 
     nav {
       padding-left: 1rem;
-      padding-bottom: .5rem;
+      padding-bottom: 0.5rem;
     }
   }
-
 }
 
-
-
 nav {
-  a~a {
-    padding-left: .8rem;
+  a ~ a {
+    padding-left: 0.8rem;
   }
 }
 
